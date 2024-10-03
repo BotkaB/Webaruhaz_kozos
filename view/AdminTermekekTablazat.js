@@ -27,7 +27,9 @@ export default class AdminTermekekTablazat{
     }
 
     tablazatKiir() {
-        this.szuloElem.append(`<table class="table table striped">
+        this.szuloElem.append(`
+            <div class="table-responsive">
+            <table class="table striped">
             <thead>
             <tr>
                 <th>id</th>
@@ -42,6 +44,7 @@ export default class AdminTermekekTablazat{
             </tr>
              </thead>
            <tbody class="sorok"></tbody>
-        </table>`
+        </table>
+        </div>`
     )};
 }
